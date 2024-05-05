@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit 2 - lesson 1 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); 
+height: 530vh; }
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  margin-top:10px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:210px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ text-align: center;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+</style>
+</head>
+<body>
+<nav><div class="dropdown">
+ <button>Lessons</button>
+ <div class="content">
+  <a href="lesson1new.html" target="_blank">Lesson 1</a>
+  <a href="lesson2new.html" target="_blank">Lesson 2</a>
+  <a href="lesson3new.html" target="_blank">Lesson 3</a>
+  <a href="lesson4new.html" target="_blank">Lesson 4</a>
+  <a href="lesson5new.html" target="_blank">Lesson 5</a>
+  <a href="lesson6new.html" target="_blank">Lesson 6</a>
+  <a href="lesson7new.html" target="_blank">Lesson 7</a>
+  <a href="lesson8new.html" target="_blank">Lesson 8</a>
+  <a href="lesson9new.html" target="_blank">Lesson 9</a>
+  <a href="lesson10new.html" target="_blank">Lesson 10</a>
+  <a href="lesson11new.html" target="_blank">Lesson 11</a>
+  <a href="lesson12new.html" target="_blank">Lesson 12</a>
+  <a href="lesson13new.html" target="_blank">Lesson 13</a>
+ </div>
+</div></nav>
+
+
+<h1 class="tooltips">  Count nouns <span class="tooltipstext"> Count nouns have two forms: singular and plural. </span> </h1> 
+
+<p style="text-align: center; font-size: 40px;">Singular count nouns refer to one person or thing:</p>
+
+<div style=" display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px; ">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound1.play()" class="buttons"> 
+a teacher </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound3.play()" class="buttons"> a book </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound5.play()" class="buttons"> a wish </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound7.play()" class="buttons"> an idea </button>
+</div>
+
+</div>
+
+
+
+<p style="text-align: center; font-size: 40px;">Plural count nouns refer to more than one person or thing:</p>
+
+<div style=" display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px; ">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound1.play()" class="buttons"> 
+teachers </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound3.play()" class="buttons"> books </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound5.play()" class="buttons"> wishes </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound7.play()" class="buttons"> ideas </button>
+</div>
+
+</div>
+
+
+
+<p style="text-align: center; font-size: 40px;">Singular count nouns<br>
+Singular count nouns cannot be used alone. They must have a determiner:
+</p>
+
+<div style=" display: grid; grid-template-columns: 1fr 1fr 1fr 1fr ;">
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px; ">
+<p style="text-align: center; font-size: 30px;"></p>
+
+<button onmousedown="sound1.play()" class="buttons"> 
+the English teacher </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound3.play()" class="buttons"> that book </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound5.play()" class="buttons"> a wish </button>
+</div>
+
+<div style="box-shadow: 1px 0 1px grey; text-align: center; padding:0px;">
+<p style="text-align: center; font-size: 30px;"></p>
+<button onmousedown="sound7.play()" class="buttons"> my latest idea </button>
+</div>
+
+</div>
+
+
+
+<div style=" display: grid; grid-template-columns: 900px; justify-content: center; margin-top: 20px;">
+
+
+<div style="text-align: left; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">
+
+<p style="text-align: center; font-size: 40px;">  Plural count nouns </p><br>
+We usually add –s to make a plural noun:<br><br>
+
+book &#10162; books<br>
+school &#10162; schools<br>
+friend &#10162; friends<br><br>
+
+We add –es to nouns ending in –s, –ch, –sh, –ss, –x and –o: <br><br>
+
+class &#10162; classes<br>
+watch &#10162; watches<br>
+gas &#10162; gases<br>
+wish &#10162; wishes<br>
+box &#10162; boxes<br>
+potato &#10162; potatoes<br><br>
+
+When a noun ends in a consonant and –y, we make the plural with –ies:<br><br>
+
+lady &#10162; ladies<br>
+country &#10162; countries<br>
+party &#10162; parties<br><br>
+
+If a noun ends in a vowel and –y, we simply add –s:<br><br>
+
+boy &#10162; boys<br>
+day &#10162; days<br>
+play &#10162; plays<br><br>
+
+Some common nouns have irregular plurals:<br><br>
+
+man &#10162; men<br>
+woman &#10162; women<br>
+child &#10162; children<br>
+person &#10162; people<br>
+foot &#10162; feet<br><br>
+
+Plural count nouns do not have a general determiner when they refer to people or things in general:<br><br>
+
+&bull; Computers are very expensive.<br>
+&bull; Do you sell old books?<br><br>
+
+But they may have a specific determiner:<br><br>
+
+&bull; Those computers are very expensive.<br>
+&bull; The books in that shop are very expensive. <br>
+&bull; Her sisters live there.<br><br>
+
+or a quantifier:<br><br>
+
+&bull; some new books<br>
+&bull; a few teachers	<br>
+&bull; lots of good ideas<br><br>
+
+or a numeral:<br><br>
+
+&bull; two new books	<br>
+&bull; three wishes<br><br>
+
+
+</p>
+</div>
+
+</div>
+
+
+
+
+<script>
+
+  var sound1 = new Audio();
+  sound1.src = "all.mp3";
+
+  var sound2 = new Audio();
+  sound2.src = "no.mp3";
+
+  var sound3 = new Audio();
+  sound3.src = "some.mp3";
+
+  var sound4 = new Audio();
+  sound4.src = "any.mp3";
+
+  var sound5 = new Audio();
+  sound5.src = "more.mp3";
+
+  var sound6 = new Audio();
+  sound6.src = "most.mp3";
+
+  var sound7 = new Audio();
+  sound7.src = "alotof.mp3";
+
+  var sound8 = new Audio();
+  sound8.src = "lotsof.mp3";
+
+  var sound9 = new Audio();
+  sound9.src = "enough.mp3";
+
+  var sound10 = new Audio();
+  sound10.src = "less.mp3";
+
+  var sound11 = new Audio();
+  sound11.src = "plentyof.mp3";
+
+  var sound12 = new Audio();
+  sound12.src = "heapsof.mp3";
+
+ 
+  var sound13 = new Audio();
+  sound13.src = "aloadof.mp3";
+
+  var sound14 = new Audio();
+  sound14.src = "loadsof.mp3";
+
+  var sound15 = new Audio();
+  sound15.src = "tonsof.mp3";
+
+  var sound16 = new Audio();
+  sound16.src = "notmany.mp3";
+
+  var sound17 = new Audio();
+  sound17.src = "several.mp3";
+
+  var sound18 = new Audio();
+  sound18.src = "each.mp3";
+
+ 
+  var sound19 = new Audio();
+  sound19.src = "both.mp3";
+
+  var sound20 = new Audio();
+  sound20.src = "either.mp3";
+
+  var sound21 = new Audio();
+  sound21.src = "neither.mp3";
+
+  var sound22 = new Audio();
+  sound22.src = "afew.mp3";
+
+  var sound23 = new Audio();
+  sound23.src = "fewer.mp3";
+
+  var sound24 = new Audio();
+  sound24.src = "acoupleof.mp3";
+
+  var sound25 = new Audio();
+  sound25.src = "hundredsof.mp3";
+
+  var sound26 = new Audio();
+  sound26.src = "thousandsof.mp3";
+
+  var sound27 = new Audio();
+  sound27.src = "notmuch.mp3";
+
+  var sound28 = new Audio();
+  sound28.src = "abitof.mp3";
+
+  var sound29 = new Audio();
+  sound29.src = "alittle.mp3";
+
+  var sound30 = new Audio();
+  sound30.src = "agreatdealof.mp3";
+
+  var sound31 = new Audio();
+  sound31.src = "agooddealof.mp3";
+ 
+
+  
+
+
+</script>
+</body>
+</html>
